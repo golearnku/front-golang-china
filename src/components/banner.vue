@@ -57,9 +57,11 @@ export default {
   },
   methods: {
     loadBanner () {
-      this.$http.get('banners/' + this.name).then(banner => {
-        this.banner = banner
-      })
+      if (this.name !== "home") {
+        this.$http.get('banners/' + this.name).then(banner => {
+          this.banner = banner
+        })
+      }
     }
   },
   mounted () {

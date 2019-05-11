@@ -10,7 +10,7 @@ export const postLogin = ({ username, password }) => {
     client_secret: process.env.VUE_APP_AUTH_CLIENT_SECRET,
     username: username,
     password: password,
-    scope: ''
+    scope: '*'
   })
 }
 

@@ -26,7 +26,6 @@
       </div>
       <div class="col-md-3">
         <guest-login-guide class="mb-2" />
-        <quick-docs class="mb-2" />
         <hot-tags />
         <user-ranking class="mt-2" />
         <new-users class="mt-2" />
@@ -40,7 +39,6 @@ import Banner from '$components/banner'
 import HotTags from '$components/hot-tags'
 import UserRanking from '$components/user-ranking'
 import NewUsers from '$components/new-users'
-import QuickDocs from '$components/quick-docs'
 import ThreadsList from '$components/threads-list'
 import GuestLoginGuide from '$components/guest-login-guide'
 
@@ -58,7 +56,6 @@ export default {
   },
   components: {
     Banner,
-    QuickDocs,
     HotTags,
     UserRanking,
     NewUsers,

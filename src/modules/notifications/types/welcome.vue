@@ -1,6 +1,6 @@
 <template>
   <notification :notification="notification">
-    <template slot="title">欢迎加入一刻！</template>
+    <template slot="title">欢迎加入Golang China！</template>
   </notification>
 </template>
 
