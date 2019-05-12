@@ -1,5 +1,5 @@
 <template>
-  <div id="wrapper" class="h-100" :class="{toggled: isToggled}">
+  <div id="wrapper" class="h-100" :class="{toggled: isToggled}" v-if="currentUser">
     <div id="page-content-wrapper" class="w-100 position-absolute">
       <navbar v-if="shouldShowNavbar" />
       <div class="alert alert-warning text-center m-0" role="alert" v-if="currentUser.id && !currentUser.has_activated">
