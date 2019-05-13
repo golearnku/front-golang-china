@@ -1,6 +1,6 @@
 <template>
   <relation-btn :relation="relation" action="subscribe" :item="item">
-    <button slot="on" class="btn btn-sm text-gray-50">
+    <button slot="on" class="btn btn-sm text-gray-50" style="background: #fff">
       <volume-high /><span class="pl-1">订阅</span>
     </button>
     <button class="btn btn-sm" slot="off" :class="{'btn-primary': !hovering, 'btn-danger': hovering}" @mouseenter="hovering=true" @mouseleave="hovering=false">

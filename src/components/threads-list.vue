@@ -12,8 +12,8 @@
             <img :src="item.user.avatar" alt class="avatar-30">
           </a>
           <div class="text-gray-50">
-            <span v-if="item.excellent_at" class="badge badge-success">精华</span>
-            <span v-if="item.pinned_at" class="badge badge-danger">置顶</span>
+            <span v-if="item.excellent_at" class="badge badge-success mb-right">精华</span>
+            <span v-if="item.pinned_at" class="badge badge-danger mb-right">置顶</span>
             {{ item.title }}
           </div>
         </div>
@@ -95,4 +95,7 @@ export default {
 </script>
 
 <style scoped>
+  .mb-right{
+    margin-right: 5px;
+  }
 </style>

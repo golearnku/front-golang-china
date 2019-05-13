@@ -174,11 +174,9 @@
         this.busing = true
         let promise = null
         let isEdit = this.$route.name == 'threads.edit'
-
         if (isEdit) {
           promise = this.$http
-            .patch(`threads/${this.$route.params.id}`)
-            .patch(this.form)
+            .patch(`threads/${this.$route.params.id}`,this.form)
         } else {
           promise = this.$http.post('threads', this.form)
         }
