@@ -100,10 +100,10 @@
       formReady () {
         return (
           !this.busing &&
-          this.form.title.length >= 5 &&
+          this.form.title.length >= 2 &&
           this.form.node_id > 0 &&
           this.form.content.markdown &&
-          this.form.content.markdown.length >= 30
+          this.form.content.markdown.length >= 10
         )
       }
     },
